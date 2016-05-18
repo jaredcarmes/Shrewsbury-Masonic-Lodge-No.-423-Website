@@ -1,0 +1,26 @@
+{
+  "name": "lodge_423_website",
+  "version": "1.0.0",
+  "description": "A simple overhaul of Shrewsbury Masonic Lodge 423's website. Attempting to integrate facebook, and make overall experience as user-friendly as possible across all devices.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jaredcarmes/Shrewsbury-Masonic-Lodge-No.-423-Website.git"
+  },
+  "author": "Jared Armes",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jaredcarmes/Shrewsbury-Masonic-Lodge-No.-423-Website/issues"
+  },
+  "homepage": "https://github.com/jaredcarmes/Shrewsbury-Masonic-Lodge-No.-423-Website#readme",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-concat": "^2.6.0",
+    "gulp-minify-css": "^1.2.4",
+    "gulp-minify-html": "^1.0.6",
+    "gulp-uglify": "^1.5.3"
+  }
+}
