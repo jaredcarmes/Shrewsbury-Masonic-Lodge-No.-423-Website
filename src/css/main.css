@@ -1,0 +1,38 @@
+
+.jumbotron {
+	margin-bottom: 0;
+	background: #4b6ade;
+	color: white;
+}
+
+.navbar {
+	position: relative;
+	bottom: 52px;
+	margin-bottom: 0;
+	color: white;
+}
+
+.jumbotron {
+	background-image: url(../img/banner_color.png);
+	background-size: 100%;
+	background-repeat: no-repeat;
+	background-position: bottom;
+	padding-bottom: 90px;
+}
+
+.compass {
+	position: relative;
+	bottom: 10px;
+}
+
+@media (min-width: 410px) {
+.jumbotron {
+	background-image: url(../img/banner_roof.png);
+	background-size: 100%;
+	background-repeat: no-repeat;
+	background-position: bottom;
+	padding-bottom: 90px;
+}	
+}
+
+
