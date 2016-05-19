@@ -7,9 +7,8 @@
 
 .navbar {
 	position: relative;
-	bottom: 52px;
+	bottom: 51px;
 	margin-bottom: 0;
-	color: white;
 }
 
 .jumbotron {
@@ -23,6 +22,10 @@
 .compass {
 	position: relative;
 	bottom: 10px;
+}
+
+span {
+	text-align: center;
 }
 
 @media (min-width: 410px) {
