@@ -3,6 +3,7 @@ var uglify = require('gulp-uglify');
 var concat = require('gulp-concat');
 var minifyCSS = require('gulp-minify-css');
 var minifyHTML = require('gulp-minify-html');
+var minifyIMG = require('gulp-imagemin');
 
 gulp.task('scripts', function() {
 	gulp.src('src/js/*.js')
@@ -24,4 +25,10 @@ gulp.task('markup', function() {
 	.pipe(gulp.dest('dist'))
 });
 
-gulp.task('default', ['scripts', 'stylesheets', 'markup']);
+gulp.task('images', function() {
+	gulp.src('src/img/*')
+		.pipe(minifyIMG())
+		.pipe(gulp.dest('dist/img/'))
+});
+
+gulp.task('default', ['scripts', 'stylesheets', 'markup', 'images']);
