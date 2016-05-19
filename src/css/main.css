@@ -12,6 +12,13 @@
 	text-align: left;
 }
 
+.main {
+  background: #fff;
+  padding: 110px 50px 50px;
+  column-count: 2;
+  column-gap: 40px;	
+}
+
 .jumbotron {
 	background-image: url(../img/banner_color.png);
 	background-size: 100%;
@@ -78,7 +85,6 @@ body {
   	margin: 20px 0;
 }
 
-
 /*/////////////////// Media Queries \\\\\\\\\\\\\\\\\\\\\\\ */
 
 
@@ -91,3 +97,15 @@ body {
 	padding-bottom: 90px;
 	}	
 }
+
+
+
+
+
+
+
+
+
+
+
+
