@@ -1,3 +1,8 @@
+body {
+  background-image:  url("../img/background.jpg");
+  background-size:  100%;
+  background-position: center;
+}
 
 .jumbotron {
 	margin-bottom: 0;
@@ -85,21 +90,40 @@ body {
   	margin: 20px 0;
 }
 
-/*/////////////////// Media Queries \\\\\\\\\\\\\\\\\\\\\\\ */
+#column-left {
+	visibility: hidden;
 
+}
 
-@media (min-width: 410px) {
-.jumbotron {
-	background-image: url(../img/banner_roof.png);
-	background-size: 100%;
-	background-repeat: no-repeat;
-	background-position: bottom;
-	padding-bottom: 90px;
-	}	
+#column-right {
+	visibility: hidden;
 }
 
 
 
+/*/////////////////// Media Queries \\\\\\\\\\\\\\\\\\\\\\\ */
+
+
+@media (min-width: 410px) {
+	.jumbotron {
+		background-image: url(../img/banner_roof.png);
+		background-size: 100%;
+		background-repeat: no-repeat;
+		background-position: bottom;
+		padding-bottom: 90px;
+	}
+
+}
+
+@media (min-width: 768px) {
+	body {
+  		background-image:  url("../img/background2.jpg");
+  		background-size:  cover;
+  		background-position: bottom;
+      		background-repeat: no-repeat;
+
+	}	
+}
 
 
 
