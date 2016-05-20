@@ -1,14 +1,14 @@
 var gulp = require('gulp');
-var uglify = require('gulp-uglify');
 var concat = require('gulp-concat');
+var minifyJS = require('gulp-uglify');
 var minifyCSS = require('gulp-minify-css');
 var minifyHTML = require('gulp-minify-html');
 var minifyIMG = require('gulp-imagemin');
 
 gulp.task('scripts', function() {
 	gulp.src('src/js/*.js')
-	.pipe(concat('main.min.js'))
-	.pipe(uglify())
+	// .pipe(concat('main.min.js'))
+	.pipe(minifyJS())
 	.pipe(gulp.dest('dist/js/'))
 });
 

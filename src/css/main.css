@@ -99,8 +99,6 @@ body {
 	visibility: hidden;
 }
 
-
-
 /*/////////////////// Media Queries \\\\\\\\\\\\\\\\\\\\\\\ */
 
 
@@ -119,7 +117,7 @@ body {
 	body {
   		background-image:  url("../img/background2.jpg");
   		background-size:  cover;
-  		background-position: bottom;
+  		background-position: top;
       		background-repeat: no-repeat;
 
 	}	
