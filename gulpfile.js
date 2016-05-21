@@ -31,4 +31,9 @@ gulp.task('images', function() {
 		.pipe(gulp.dest('dist/img/'))
 });
 
-gulp.task('default', ['scripts', 'stylesheets', 'markup', 'images']);
+gulp.task('copyfonts', function() {
+   gulp.src('src/fonts/**')
+   .pipe(gulp.dest('dist/fonts/'));
+});
+
+gulp.task('default', ['scripts', 'stylesheets', 'markup', 'images', 'copyfonts']);
