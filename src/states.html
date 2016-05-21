@@ -10,6 +10,8 @@
 	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
 	<!-- Bootstrap Theme -->
 	<link rel="stylesheet" type="text/css" href="css/bootstrap-theme.min.css">
+	<!-- Lightbox CSS -->
+	<link rel="stylesheet" type="text/css" href="css/lightbox.css">	
 	<!-- Main CSS -->
 	<link rel="stylesheet" type="text/css" href="css/main.css">
 	<!-- Minified Main CSS -->
@@ -27,40 +29,19 @@
 	  ga('send', 'pageview');
 
 	</script>
-
+	
 </head>
 <body>
-
-<!-- Facebook Page SDK -->
-
-
-<div id="fb-root"></div>
-<script>(function(d, s, id) {
-  var js, fjs = d.getElementsByTagName(s)[0];
-  if (d.getElementById(id)) return;
-  js = d.createElement(s); js.id = id;
-  js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.6";
-  fjs.parentNode.insertBefore(js, fjs);
-}(document, 'script', 'facebook-jssdk'));</script>
-
-
-
-
-
-<!-- Header -->
-
 	<div class="jumbotron text-center">
 		<h2>Shrewsbury Masonic Lodge No. 423</h2>
-		<p>Under the jurisdiction of the Grand Lodge of Free and Accepted Masons of Pennsylvania</p>
+		<p>Under the jurisdiction of the Grand Lodge of Free and Accepted Masons of Pennsylvania</p>	
 	</div>
-
-<!-- Navbar -->
-
+<div>
 	<div class="navbar-default navbar-static-top stuck">
 		<div class="container">
 			<div class="navbar-header">
 				<a class="navbar-brand" href="index.html">
-					<img class="compass" src="img/compass_selected.png" alt="compass" height="40" width="40" alt="home">
+					<img class="compass" src="img/compass.png" alt="compass" height="40" width="40" onmouseover="this.src='img/compass_hover.png'" onmouseout="this.src='img/compass.png'" alt="home">
 				</a>
 				<button class="navbar-toggle" data-toggle = "collapse" data-target = ".navHeaderCollapse">
 					<span class="icon-bar"></span>
@@ -77,7 +58,7 @@
 							<li><a href="http://pamasons.org">Grand Lodge Website</a></li>
 							<li><a href="construction.html">Calendar</a></li>
 							<li><a href="http://pamasons.org/join/">Join us!</a></li>
-							<li><a href="states.html">Lodges by state</a></li>							
+							<li><a href="states.html">Lodges by state</a></li>	
 						</ul>
 					</li>
 					<li><a href="https://www.facebook.com/Shrewsbury-Lodge-No-423-FAM-183128001721003/">Facebook</a></li>
@@ -88,101 +69,126 @@
 		</div>
 	</div>
 	<br>
-	<br>	
+	<br>		
 <!-- Body -->
 
-<div class="container">
-	<div class="row">
-		<div class="col-md-8">
-			<img src="img/lodge_flag.jpg" class="img-responsive">
-			<br>
-			<h3>
-				Welcome!
-			</h3>		
-			<p>
-				Lorem ipsum dolor sit amet, <strong>consectetur adipiscing elit</strong>. Aliquam eget sapien sapien. Curabitur in metus urna. In hac habitasse platea dictumst. Phasellus eu sem sapien, sed vestibulum velit. Nam purus nibh, lacinia non faucibus et, pharetra in dolor. Sed iaculis posuere diam ut cursus. <em>Morbi commodo sodales nisi id sodales. Proin consectetur, nisi id commodo imperdiet, metus nunc consequat lectus, id bibendum diam velit et dui.</em> Proin massa magna, vulputate nec bibendum nec, posuere nec lacus. <small>Aliquam mi erat, aliquam vel luctus eu, pharetra quis elit. Nulla euismod ultrices massa, et feugiat ipsum consequat eu.</small>
-			</p>
-		</div>
-		<div class="col-md-4 facebook">
-			<iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2FShrewsbury-Lodge-No-423-FAM-183128001721003&tabs=timeline&width=340&height=550&small_header=true&adapt_container_width=true&hide_cover=true&show_facepile=true&appId" width="340" height="450" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true"></iframe>
-		</div>
-	</div>
-</div>
-	<br>
 
-	<br>
 
-<div class="fairground">
-	
-</div>
 
-<div class="container">
+
+
+
+<div class="container-fluid">
 	<div class="row">
 		<div class="col-md-12">
-			<div class="carousel slide" id="carousel-703475">
-				<ol class="carousel-indicators">
-					<li data-slide-to="0" data-target="#carousel-703475">
-					</li>
-					<li data-slide-to="1" data-target="#carousel-703475" class="active">
-					</li>
-					<li data-slide-to="2" data-target="#carousel-703475">
-					</li>
-				</ol>
-				<div class="carousel-inner">
-					<div class="item">
-						<img alt="Carousel Bootstrap First" src="img/dummy.jpg" />
-						<div class="carousel-caption">
-							<h4>
-								First Thumbnail label
-							</h4>
-							<p>
-								Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.
-							</p>
-						</div>
-					</div>
-					<div class="item active">
-						<img alt="Carousel Bootstrap Second" src="img/dummy.jpg" />
-						<div class="carousel-caption">
-							<h4>
-								Second Thumbnail label
-							</h4>
-							<p>
-								Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.
-							</p>
-						</div>
-					</div>
-					<div class="item">
-						<img alt="Carousel Bootstrap Third" src="img/dummy.jpg" />
-						<div class="carousel-caption">
-							<h4>
-								Third Thumbnail label
-							</h4>
-							<p>
-								Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.
-							</p>
-						</div>
-					</div>
-				</div> <a class="left carousel-control" href="#carousel-703475" data-slide="prev"><span class="glyphicon glyphicon-chevron-left"></span></a> <a class="right carousel-control" href="#carousel-703475" data-slide="next"><span class="glyphicon glyphicon-chevron-right"></span></a>
+		<h2>Pennsylvania</h2>
+		<br>
+			<div class="row text-center ">
+				<div class="col-md-3 states">
+					<a href="img/lodge.jpg" data-lightbox="image-1" data-title="Shrewsbury Lodge 423 - Shrewsbury, PA">
+						<img src="img/lodge.jpg" height="200" width="200">
+					</a>
+				</div>
+				<div class="col-md-3 states">
+					<a href="img/scottish_rite_temple.jpg" data-lightbox="image-2" data-title="Scottish Rite Temple - Harrisburg, PA">
+						<img src="img/scottish_rite_temple.jpg" height="100" width="100">
+					</a>
+				</div>
+				<div class="col-md-3 states">
+					<a href="img/schuylkill_lodge.jpg" data-lightbox="image-3" data-title="Schuylkill Lodge 138 - Orwigsburg, PA">
+						<img src="img/schuylkill_lodge.jpg" height="100" width="100">
+					</a>
+				</div>
+				<div class="col-md-3 states">
+					<a href="img/page_lodge.jpg" data-lightbox="image-4" data-title="Page Lodge 270 - Schuylkill Haven, PA">
+						<img src="img/page_lodge.jpg" height="100" width="100">
+					</a>
+				</div>												
 			</div>
 		</div>
 	</div>
 </div>
 
+<hr>
 
+<div class="container-fluid">
+	<div class="row">
+		<div class="col-md-12">
+		<h2>Maryland</h2>
+		<br>
+			<div class="row text-center ">
+				<div class="col-md-3 states">
+					<a href="img/charity_lodge.jpg"  data-lightbox="image-1"  data-title="Charity Lodge 134 - Freeland, PA">
+						<img src="img/charity_lodge.jpg" height="200" width="200">
+					</a>
+				</div>
+				<div class="col-md-3 states">
+					<a href="img/charity_sign.jpg" data-lightbox="image-2"  data-title="Charity Lodge 134 - Freeland, PA">
+						<img src="img/charity_sign.jpg" height="100" width="100">
+					</a>
+				</div>
+				<div class="col-md-3 states">
+					<a href="img/susquehanna_lodge.jpg" data-lightbox="image-3"  data-title="Susquehanna Lodge 130 - Havre De Grace, PA">
+						<img src="img/susquehanna_lodge.jpg" height="100" width="100">
+					</a>
+				</div>
+				<div class="col-md-3 states">
+					<a href="img/susquehanna_front.jpg" data-lightbox="image-4"   data-title="Susquehanna Lodge 130 - Havre De Grace, PA">
+						<img src="img/susquehanna_front.jpg" height="100" width="100">
+					</a>
+				</div>											
+			</div>
+		<div class="row text-center ">
+				<div class="col-md-12 states">
+					<a href="img/grand_lodge_of_maryland.jpg" data-lightbox="image-1"   data-title="Grand Lodge of Maryland - Cockeysville, PA">
+						<img src="img/grand_lodge_of_maryland.jpg" height="200" width="200">
+					</a>
+				</div>									
+			</div>			
+		</div>
+	</div>
+</div>
 
+<hr>
 
+<div class="container-fluid">
+	<div class="row">
+		<div class="col-md-12">
+		<h2>Florida</h2>
+		<br>
+			<div class="row text-center ">
+				<div class="col-md-12 states">
+					<a href="img/old_scottish_rite_masonic_center.jpg" data-lightbox="image-1"   data-title="Scottish Rite Masonic Center - Key West, FL">
+						<img src="img/old_scottish_rite_masonic_center.jpg" height="200" width="200">
+					</a>
+				</div>											
+			</div>
+		</div>
+	</div>
+</div>
 
+<hr>
 
-
-
-
-
-
-
-
-
-
-
+<div class="container-fluid">
+	<div class="row">
+		<div class="col-md-12">
+		<h2>Virginia</h2>
+		<br>
+			<div class="row text-center ">
+				<div class="col-md-6 states">
+					<a href="img/george_washington_memorial.jpg" data-lightbox="image-1"  data-title="George Washington Masonic National Memorial - Alexandria, VA">
+						<img src="img/george_washington_memorial.jpg" height="200" width="200">
+					</a>
+				</div>	
+				<div class="col-md-6 states">
+					<a href="img/george_washington_memorial_night.jpg" data-lightbox="image-2"  data-title="George Washington Masonic National Memorial - Alexandria, VA">
+						<img src="img/george_washington_memorial_night.jpg" height="200" width="200">
+					</a>
+				</div>															
+			</div>
+		</div>
+	</div>
+</div>
 
 
 <!-- Footer -->
@@ -231,18 +237,29 @@
 		</div>
 	</div>
 
-
-<!-- Scripts -->
-
 	<!-- Jquery JS -->
 	<script type="text/javascript" src="js/jquery.min.js"></script>
 	<!-- Sticky Nav JS -->
 	<script type="text/javascript" src="js/jquery.stuck.js"></script>	
 	<!-- Bootstrap JS -->
 	<script type="text/javascript" src="js/bootstrap.min.js"></script>
+	<!-- Lightbox JS -->
+	<script type="text/javascript" src="js/lightbox.js"></script>	
 	<!-- Main JS -->
 	<script type="text/javascript" src="js/main.js"></script>
 	<!-- Minified Main JS -->
 	<script type="text/javascript" src="js/main.min.js"></script>
+
+	<!-- Lightbox Options -->
+
+	<script>
+	    lightbox.option({
+	      'showImageNumberLabel': false,
+	      'disableScrolling': true
+	    })
+	</script>	
+
+
+
 </body>
 </html>
