@@ -131,7 +131,8 @@
       return false;
     });
 
-    this.$lightbox.find('.lb-loader, .lb-close').on('click', function() {
+    // Adding ".lb-container" here makes images close upon clicking them.
+    this.$lightbox.find('.lb-loader, .lb-close, .lb-container').on('click', function() {
       self.end();
       return false;
     });

@@ -1,6 +1,6 @@
 body {
-  background-image:  url("../img/background.jpg");
-  background-size:  100%;
+  background-image:  url("../img/background.png");
+
   background-position: center;
 }
 
@@ -125,6 +125,8 @@ hr {
 .carousel-caption{
     display: none;
     background: rgba(75,106,222,0.6);
+    padding-left: 10px;
+    padding-right: 10px;    
     border-radius: 5px;
 }
 
@@ -245,6 +247,12 @@ hr {
 
 .title {
   text-align: center;
+  background-color: #555;
+  padding: 20px;
+  color: white;
+ -webkit-text-shadow: 1px 3px 4px #000;
+-moz-text-shadow: 1px 3px 4px #000;
+text-shadow: 1px 2px 4px #000;
 }
 
 .states img {
@@ -270,6 +278,10 @@ hr {
     vertical-align: center;
 }
 
+.panel {
+  background-image: url("../img/repeating.png");
+}
+
 
 .est {
   position: relative;
@@ -277,6 +289,20 @@ hr {
   color: #e0ba52;
   top: 80%;
   left: 0;
+  text-shadow: none;
+}
+
+.map-1 {
+  display: none;
+  padding-bottom: 30px;  
+}
+
+.map-2 {
+  display: block;
+}      
+
+.click {
+  display: none;
 }
 
 
@@ -304,6 +330,7 @@ hr {
         left: 75%;
       }  
 
+
 }
 
 @media (min-width: 501px) {
@@ -316,6 +343,15 @@ hr {
         right: 0px;
         left: 82%;
       }  
+
+.map-1 {
+  display: block;
+  padding-bottom: 30px;  
+}
+
+.map-2 {
+  display: none;
+}            
 
 }
 
@@ -330,6 +366,9 @@ hr {
 @media (min-width: 768px) {
 	body {
   		background-image:  url("../img/background2.jpg");
+            -webkit-background-size:  cover;   
+            -moz-background-size:  cover;   
+            -o-background-size:  cover;
   		background-size:  cover;
   		background-position: top;
       		background-repeat: no-repeat;
@@ -344,6 +383,14 @@ hr {
 	-moz-box-shadow: inset 0px 0px 61px 0px rgba(0,0,0,0.75);
 	box-shadow: inset 0px 0px 61px 0px rgba(0,0,0,0.75);
      }  
+
+     .tap {
+  display: none;
+}
+
+.click {
+  display: block;
+}
 
 
 .states img {
