@@ -36,4 +36,9 @@ gulp.task('copyfonts', function() {
    .pipe(gulp.dest('dist/fonts/'));
 });
 
-gulp.task('default', ['scripts', 'stylesheets', 'markup', 'images', 'copyfonts']);
+gulp.task('copyicons', function() {
+   gulp.src('src/favicons/*')
+   .pipe(gulp.dest('dist/favicons/'));
+});
+
+gulp.task('default', ['scripts', 'stylesheets', 'markup', 'images', 'copyfonts', 'copyicons']);
