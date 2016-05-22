@@ -20,6 +20,10 @@ body {
 	display: none;
 }
 
+.welcome {
+  text-align: center;
+}
+
 .navbar {
 	position: relative;
 	bottom: 51px;
@@ -383,6 +387,10 @@ text-shadow: 1px 2px 4px #000;
 	-moz-box-shadow: inset 0px 0px 61px 0px rgba(0,0,0,0.75);
 	box-shadow: inset 0px 0px 61px 0px rgba(0,0,0,0.75);
      }  
+
+/*     .welcome {
+  text-align: left;
+}*/
 
      .tap {
   display: none;
