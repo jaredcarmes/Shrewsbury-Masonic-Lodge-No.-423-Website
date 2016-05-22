@@ -20,6 +20,26 @@ body {
 	display: none;
 }
 
+.navbar-default li a {
+font-weight: bold;
+}
+
+.dropdown li a {
+  font-weight: normal;
+}
+
+.home {
+  position: relative;
+  top: -40px;
+  left: 45px;
+}
+
+.navbar-default {
+-webkit-box-shadow: 0px 3px 15px -2px rgba(0,0,0,0.41);
+-moz-box-shadow: 0px 3px 15px -2px rgba(0,0,0,0.41);
+box-shadow: 0px 3px 15px -2px rgba(0,0,0,0.41);
+}
+
 .welcome {
   text-align: center;
 }
@@ -407,7 +427,7 @@ text-shadow: 1px 2px 4px #000;
 	}  	
 
       .est {
-        top: 250px;
+        top: 255px;
         right: 0px;
         left: 82%;
       }  
