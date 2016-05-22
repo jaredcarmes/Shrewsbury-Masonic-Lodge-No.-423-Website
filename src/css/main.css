@@ -16,7 +16,7 @@ body {
 
 }
 
-.jumbotron p {
+.jumbotron h4 {
 	display: none;
 }
 
@@ -296,6 +296,15 @@ text-shadow: 1px 2px 4px #000;
   text-shadow: none;
 }
 
+.meet {
+  display: block !Important;
+  position: relative !Important;
+  bottom: -100px;
+   -webkit-text-shadow: 2px 3px 4px #000000;
+    -moz-text-shadow: 2px 3px 4px #000000;
+    text-shadow: 2px 3px 4px #000000;  
+}
+
 .map-1 {
   display: none;
   padding-bottom: 30px;  
@@ -313,7 +322,7 @@ text-shadow: 1px 2px 4px #000;
 /*/////////////////// Media Queries \\\\\\\\\\\\\\\\\\\\\\\ */
 
 
-@media (min-width: 410px) {
+@media (min-width: 494px) {
 	.jumbotron {
 		background-image: url(../img/banner_roof.png);
 		background-size: 100%;
@@ -322,19 +331,26 @@ text-shadow: 1px 2px 4px #000;
 		padding-bottom: 90px;
 	}
 
-	.jumbotron p {
-		display: inline;
+	.jumbotron h4 {
+		display: block;
 	}
 
-      .est {
+
+}
+
+@media (min-width: 494px) {
+        .est {
         position: absolute;
         display: inline-block !Important;
         color: #e0ba52;
-        top: 240px;
+        top: 285px;
         left: 75%;
+        right: 0px;
       }  
 
-
+      .meet {
+        left: -30%;
+      }
 }
 
 @media (min-width: 501px) {
@@ -343,7 +359,7 @@ text-shadow: 1px 2px 4px #000;
         position: absolute;
         display: block;
         color: #e0ba52;
-        top: 200px;
+        top: 255px;
         right: 0px;
         left: 82%;
       }  
@@ -367,6 +383,18 @@ text-shadow: 1px 2px 4px #000;
 
 }
 
+@media(min-width: 736px) {
+        .est {
+        top: 235px;
+        right: 0px;
+        left: 82%;
+      }  
+
+      .meet {
+        left: -35%;
+      }      
+}
+
 @media (min-width: 768px) {
 	body {
   		background-image:  url("../img/background2.jpg");
@@ -377,6 +405,13 @@ text-shadow: 1px 2px 4px #000;
   		background-position: top;
       		background-repeat: no-repeat;
 	}  	
+
+      .est {
+        top: 250px;
+        right: 0px;
+        left: 82%;
+      }  
+
 .fairground {
 
 	background-color: #444;
