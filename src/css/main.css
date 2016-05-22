@@ -8,7 +8,12 @@ body {
 	margin-bottom: 0;
 	background: #4b6ade;
   	background-position: bottom;
-	color: white;
+    color: #fff;
+
+    -webkit-text-shadow: 2px 3px 4px #000000;
+    -moz-text-shadow: 2px 3px 4px #000000;
+    text-shadow: 2px 3px 4px #000000;
+
 }
 
 .jumbotron p {
@@ -232,19 +237,35 @@ hr {
 /*/////////////////// State image management \\\\\\\\\\\\\\\\\\\\\\\ */
 
 
+.panel-heading h2 {
+  text-align: center;
+}
 
-
-
+.title {
+  text-align: center;
+}
 
 .states img {
 	overflow: hidden;
-	max-height: 300px;
-	max-width:  300px;
-   height: 250px;
-    width: 250px;
+   height: 150px;
+    width: 150px;
     border-radius: 100%;
     margin-top: 10px;
     margin-bottom: 10px;
+            -webkit-filter: sepia(100%) hue-rotate(185deg) saturate(200%);
+        filter: sepia(100%) hue-rotate(185deg) saturate(200%);
+        -webkit-transition: .3s ease-in-out;
+        transition: .3s ease-in-out;
+}
+
+.grand img {
+  height: 200px;
+  width: 200px;
+           -webkit-filter: sepia(100%) saturate(200%);
+        filter: sepia(100%) saturate(200%);
+        -webkit-transition: .3s ease-in-out;
+        transition: .3s ease-in-out;
+    vertical-align: center;
 }
 
 
@@ -284,6 +305,8 @@ hr {
 	-moz-box-shadow: inset 0px 0px 61px 0px rgba(0,0,0,0.75);
 	box-shadow: inset 0px 0px 61px 0px rgba(0,0,0,0.75);
      }  
+
+
 .states img {
 	overflow: hidden;
 	max-height: 300px;
@@ -302,6 +325,16 @@ hr {
 
 }
 
+.grand img {
+         -webkit-filter: blur(1.5px) sepia(100%) saturate(200%);
+        filter: blur(1.5px) sepia(100%) saturate(200%);
+        -webkit-transition: .3s ease-in-out;
+        transition: .3s ease-in-out;
+        height: 250px;
+        width: 250px;
+}
+
+
     .states img:hover {
         -webkit-filter: blur(0);
         filter: blur(0);
@@ -315,10 +348,20 @@ hr {
 		display: block;
 	}
 
+
+  .title {
+  text-align: left;
+}
+
 	.states img {
-	height: 200px;
-    width: 200px;
+	height: 150px;
+    width: 150px;
 	}
+
+    .grand img {
+      height: 300px;
+      width: 300px;
+    }
 
 .carousel {
   	width:640px;
