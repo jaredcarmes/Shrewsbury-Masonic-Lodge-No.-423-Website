@@ -124,13 +124,14 @@ hr {
 
 .carousel-caption{
     display: none;
-    background: rgba(0,0,0,0.5);
+    background: rgba(75,106,222,0.6);
     border-radius: 5px;
 }
 
 .carousel img {
 	min-width: 100%;
 	min-height: 40%;
+      overflow: hidden;
 }
 
 
@@ -270,6 +271,13 @@ hr {
 }
 
 
+.est {
+  position: relative;
+  display: inline-block !Important;
+  color: #e0ba52;
+  top: 80%;
+  left: 0;
+}
 
 
 /*/////////////////// Media Queries \\\\\\\\\\\\\\\\\\\\\\\ */
@@ -287,6 +295,27 @@ hr {
 	.jumbotron p {
 		display: inline;
 	}
+
+      .est {
+        position: absolute;
+        display: inline-block !Important;
+        color: #e0ba52;
+        top: 240px;
+        left: 75%;
+      }  
+
+}
+
+@media (min-width: 501px) {
+
+      .est {
+        position: absolute;
+        display: block;
+        color: #e0ba52;
+        top: 200px;
+        right: 0px;
+        left: 82%;
+      }  
 
 }
 
