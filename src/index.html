@@ -15,6 +15,8 @@
 	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
 	<!-- Bootstrap Theme -->
 	<link rel="stylesheet" type="text/css" href="css/bootstrap-theme.min.css">
+	<!-- Lightbox CSS -->
+	<link rel="stylesheet" type="text/css" href="css/lightbox.css">	
 	<!-- Main CSS -->
 	<link rel="stylesheet" type="text/css" href="css/main.css">
 	<!-- Minified Main CSS -->
@@ -139,7 +141,9 @@
 				</ol>
 				<div class="carousel-inner">
 					<div class="item">
-						<img alt="Carousel Bootstrap First" src="img/dummy.jpg" />
+						<a href="img/dummy.jpg" data-lightbox="dummy"   data-title="dummy - dummy">						
+							<img alt="Carousel Bootstrap First" src="img/dummy.jpg" />
+						</a>
 						<div class="carousel-caption">
 							<h4>
 								First Thumbnail label
@@ -148,9 +152,11 @@
 								Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.
 							</p>
 						</div>
-					</div>
+					</div>					
 					<div class="item active">
-						<img alt="Carousel Bootstrap Second" src="img/dummy.jpg" />
+						<a href="img/dummy.jpg" data-lightbox="dummy"   data-title="dummy - dummy">						
+							<img alt="Carousel Bootstrap Second" src="img/dummy.jpg"  />
+						</a>
 						<div class="carousel-caption">
 							<h4>
 								Second Thumbnail label
@@ -161,7 +167,9 @@
 						</div>
 					</div>
 					<div class="item">
-						<img alt="Carousel Bootstrap Third" src="img/dummy.jpg" />
+						<a href="img/dummy.jpg" data-lightbox="dummy"   data-title="dummy - dummy">					
+							<img alt="Carousel Bootstrap Third" src="img/dummy.jpg" />
+						</a>
 						<div class="carousel-caption">
 							<h4>
 								Third Thumbnail label
@@ -276,6 +284,8 @@
 	<script type="text/javascript" src="js/jquery.stuck.js"></script>	
 	<!-- Bootstrap JS -->
 	<script type="text/javascript" src="js/bootstrap.min.js"></script>
+	<!-- Lightbox JS -->
+	<script type="text/javascript" src="js/lightbox.js"></script>	
 	<!-- Main JS -->
 	<script type="text/javascript" src="js/main.js"></script>
 	<!-- Minified Main JS -->
