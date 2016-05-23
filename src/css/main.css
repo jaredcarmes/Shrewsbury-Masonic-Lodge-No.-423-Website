@@ -160,6 +160,25 @@ hr {
       overflow: hidden;
 }
 
+.brothers img {
+  margin: 0 auto;
+}
+
+.pm {
+  font-weight: bold;
+  color: #4b6ade;
+}
+
+.chair {
+font-weight: bold;
+color: #e0ba52;
+}
+
+.area {
+  position: relative;
+  bottom: 15px;
+}
+
 
 /* ================================= 
   Animations & Transitions
