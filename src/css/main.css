@@ -38,6 +38,10 @@ font-weight: bold;
   display: none;
 }
 
+.shrewsbury2 {
+  display: none;
+}
+
 
 
 .navbar-default {
@@ -200,7 +204,8 @@ color: #e0ba52;
 ==================================== */
 
 .row,
-.lemon {
+.lemon,
+.lemon2 {
     animation: fadein 2s, shimmy 1.5s;
     -moz-animation: fadein 2s, shimmy 1.5s;
     /* Firefox */
@@ -401,6 +406,30 @@ border-radius: 20px;
   top: 10px;
 }
 
+.lemon2 {
+  position: relative;
+  top: -10px;
+  text-align: center;
+}
+
+.lemon2  h2 {
+  position: relative;
+  top: -25px;
+}
+
+.lemon2 a {
+  position: relative;
+  top: 10px;
+  font-weight: bold;
+}
+
+.lemon2 a:hover {
+  font-weight: bold;  
+}
+
+.lemon2 p {
+  color: #fff;
+}
 
 
 
@@ -412,6 +441,17 @@ border-radius: 20px;
   right: 0px;
   top: -40px;
   background-color: #e0ba52;
+    width: 100%;
+       height:278px;
+       z-index: -1;
+
+     }    
+
+      .shrewsground2 {
+  position: absolute;
+  right: 0px;
+  top: -40px;
+  background-color: #4b6ade;
     width: 100%;
        height:278px;
        z-index: -1;
@@ -438,6 +478,27 @@ text-shadow: 1px 2px 4px #000;
   top: 10
 }
 
+     .lemon2 {
+  position: relative;
+  top: -10px;
+  text-align: center;
+}
+
+.lemon2  h2 {
+  position: relative;
+  top: -25px;
+  color: white;
+ -webkit-text-shadow: 1px 3px 4px #000;
+-moz-text-shadow: 1px 3px 4px #000;
+text-shadow: 1px 2px 4px #000;    
+}
+
+.lemon2 a {
+  position: relative;
+  top: 10
+}
+}
+
 @media(min-width: 473px) {
    .shrewsground {
   position: absolute;
@@ -448,7 +509,18 @@ text-shadow: 1px 2px 4px #000;
        height:258px;
        z-index: -1;
 
-     }    
+     }  
+
+   .shrewsground2 {
+  position: absolute;
+  right: 0px;
+  top: -40px;
+  background-color: #4b6ade;
+    width: 100%;
+       height:258px;
+       z-index: -1;
+
+     }           
 }
 
 @media (min-width: 494px) {
@@ -523,6 +595,17 @@ text-shadow: 1px 2px 4px #000;
        z-index: -1;
 
      }    
+
+     .shrewsground2 {
+  position: absolute;
+  right: 0px;
+  top: -40px;
+  background-color: #4b6ade;
+    width: 100%;
+       height:238px;
+       z-index: -1;
+
+     }         
 }
 
 @media(min-width: 736px) {
@@ -564,6 +647,26 @@ text-shadow: 1px 2px 4px #000;
 }
 
 .lemon a {
+  position: relative;
+  top: 10px;
+}  
+
+.lemon2 {
+  position: relative;
+  top: 0px;
+  text-align: left;
+}
+
+.lemon2  h2 {
+  position: relative;
+  top: -25px;
+  color: white;
+ -webkit-text-shadow: 1px 3px 4px #000;
+-moz-text-shadow: 1px 3px 4px #000;
+text-shadow: 1px 2px 4px #000;  
+}
+
+.lemon2 a {
   position: relative;
   top: 10px;
 }  
@@ -643,7 +746,16 @@ text-shadow: 1px 2px 4px #000;
     display: block;
   }
 
+  .shrewsbury2 {
+    display: block;
+  }  
+
        .lemon {
+  position: relative;
+top: 30px;
+}
+
+       .lemon2 {
   position: relative;
 top: 30px;
 }
@@ -653,6 +765,17 @@ top: 30px;
   right: 0px;
   top: -40px;
   background-color: #e0ba52;
+    width: 100%;
+       height:344px;
+       z-index: -1;
+
+     }   
+
+           .shrewsground2 {
+  position: absolute;
+  right: 0px;
+  top: -40px;
+  background-color: #4b6ade;
     width: 100%;
        height:344px;
        z-index: -1;
@@ -710,6 +833,10 @@ top: 30px;
     padding-bottom: 47px;
   }
 
+  .shrewsbury2 {
+    padding-bottom: 47px;
+  }  
+
     .shrewsground {
   position: absolute;
   right: 0px;
@@ -719,5 +846,16 @@ top: 30px;
        height:455px;
        z-index: -1;
 
-     }      
+     }     
+
+         .shrewsground2 {
+  position: absolute;
+  right: 0px;
+  top: -40px;
+  background-color: #4b6ade;
+    width: 100%;
+       height:455px;
+       z-index: -1;
+
+     }       
 }
