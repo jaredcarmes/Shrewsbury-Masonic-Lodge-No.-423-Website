@@ -31,6 +31,8 @@ gulp.task('images', function() {
 		.pipe(gulp.dest('dist/img/'))
 });
 
+// File moving tasks
+
 gulp.task('copyfonts', function() {
    gulp.src('src/fonts/*')
    .pipe(gulp.dest('dist/fonts/'));
@@ -41,4 +43,16 @@ gulp.task('copyicons', function() {
    .pipe(gulp.dest('dist/favicons/'));
 });
 
-gulp.task('default', ['scripts', 'stylesheets', 'markup', 'images', 'copyfonts', 'copyicons']);
+gulp.task('brothers', function() {
+	gulp.src('src/img/brothers/*')
+		.pipe(minifyIMG())
+		.pipe(gulp.dest('dist/img/brothers/'))
+});
+
+gulp.task('lodges', function() {
+	gulp.src('src/img/lodges/*')
+		.pipe(minifyIMG())
+		.pipe(gulp.dest('dist/img/lodges/'))
+});
+
+gulp.task('default', ['scripts', 'stylesheets', 'markup', 'images', 'copyfonts', 'copyicons', 'brothers', 'lodges']);
