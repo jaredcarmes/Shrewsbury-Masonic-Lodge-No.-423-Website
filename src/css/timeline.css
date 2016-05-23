@@ -13,6 +13,9 @@ Primary style
 
 body {
   background-color: #e9f0f5;
+  background-image: url("../img/background.png");
+  background-size: 20%;
+  background-repeat: repeat;;
 }
 
 a {
@@ -22,6 +25,10 @@ a {
 
 img {
   max-width: 100%;
+}
+
+.cd-timeline-block h2 {
+  font-size: 20px;
 }
 
 /* -------------------------------- 
@@ -143,7 +150,7 @@ header h1 {
   background: #4b6ade;
 }
 .cd-timeline-img.cd-location {
-  background: #f0ca45;
+  background: purple;
 }
 @media only screen and (min-width: 1170px) {
   .cd-timeline-img {
@@ -330,6 +337,8 @@ header h1 {
 text-align: left;
 }
 
+
+
 @media only screen and (min-width: 1170px) {
   /* inverse bounce effect on even content blocks */
   .cssanimations .cd-timeline-block:nth-child(even) .cd-timeline-content.bounce-in {
@@ -462,5 +471,12 @@ text-align: left;
     -o-transform: translateX(0);
     transform: translateX(0);
   }
+
+}
+
+@media only screen and (min-width: 440px) {
+  .cd-timeline-block h2 {
+  font-size: 30px;
+}
 
 }
