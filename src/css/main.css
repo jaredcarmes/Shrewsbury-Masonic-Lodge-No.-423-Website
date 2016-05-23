@@ -34,6 +34,12 @@ font-weight: bold;
   left: 45px;
 }
 
+.shrewsbury {
+  display: none;
+}
+
+
+
 .navbar-default {
 -webkit-box-shadow: 0px 3px 15px -2px rgba(0,0,0,0.41);
 -moz-box-shadow: 0px 3px 15px -2px rgba(0,0,0,0.41);
@@ -151,8 +157,7 @@ margin-bottom: 40px;
 }
 
 .facebook {
-  visibility: hidden;
-  display: none;
+
 }
 
 
@@ -194,13 +199,24 @@ color: #e0ba52;
   Animations & Transitions
 ==================================== */
 
-.row {
+.row,
+.lemon {
     animation: fadein 2s, shimmy 1.5s;
     -moz-animation: fadein 2s, shimmy 1.5s;
     /* Firefox */
     -webkit-animation: fadein 2s, shimmy 1.5s;
     /* Safari and Chrome */
     -o-animation: fadein 2s, shimmy 1.5s;
+    /* Opera */
+}
+
+.noanimate .row {
+      animation: none;
+    -moz-animation: none !Important;
+    /* Firefox */
+    -webkit-animation: none !Important;;
+    /* Safari and Chrome */
+    -o-animation: none !Important;;
     /* Opera */
 }
 
@@ -369,9 +385,71 @@ border-radius: 20px;
   display: none;
 }
 
+.lemon {
+  position: relative;
+  top: -10px;
+  text-align: center;
+}
+
+.lemon  h2 {
+  position: relative;
+  top: -25px;
+}
+
+.lemon a {
+  position: relative;
+  top: 10px;
+}
+
+
+
 
 /*/////////////////// Media Queries \\\\\\\\\\\\\\\\\\\\\\\ */
 
+@media (min-width: 381px) {
+ .shrewsground {
+  position: absolute;
+  right: 0px;
+  top: -40px;
+  background-color: #e0ba52;
+    width: 100%;
+       height:278px;
+       z-index: -1;
+
+     }    
+
+     .lemon {
+  position: relative;
+  top: -10px;
+  text-align: center;
+}
+
+.lemon  h2 {
+  position: relative;
+  top: -25px;
+  color: white;
+ -webkit-text-shadow: 1px 3px 4px #000;
+-moz-text-shadow: 1px 3px 4px #000;
+text-shadow: 1px 2px 4px #000;    
+}
+
+.lemon a {
+  position: relative;
+  top: 10
+}
+
+@media(min-width: 473px) {
+   .shrewsground {
+  position: absolute;
+  right: 0px;
+  top: -40px;
+  background-color: #e0ba52;
+    width: 100%;
+       height:258px;
+       z-index: -1;
+
+     }    
+}
 
 @media (min-width: 494px) {
 	.jumbotron {
@@ -434,6 +512,19 @@ border-radius: 20px;
 
 }
 
+@media(min-width: 609px) {
+     .shrewsground {
+  position: absolute;
+  right: 0px;
+  top: -40px;
+  background-color: #e0ba52;
+    width: 100%;
+       height:238px;
+       z-index: -1;
+
+     }    
+}
+
 @media(min-width: 736px) {
         .est {
         top: 235px;
@@ -456,6 +547,26 @@ border-radius: 20px;
   		background-position: top;
       		background-repeat: no-repeat;
 	}  	
+
+.lemon {
+  position: relative;
+  top: 0px;
+  text-align: left;
+}
+
+.lemon  h2 {
+  position: relative;
+  top: -25px;
+  color: white;
+ -webkit-text-shadow: 1px 3px 4px #000;
+-moz-text-shadow: 1px 3px 4px #000;
+text-shadow: 1px 2px 4px #000;  
+}
+
+.lemon a {
+  position: relative;
+  top: 10px;
+}  
 
       .est {
         top: 255px;
@@ -528,6 +639,26 @@ border-radius: 20px;
 		display: block;
 	}
 
+  .shrewsbury {
+    display: block;
+  }
+
+       .lemon {
+  position: relative;
+top: 30px;
+}
+
+     .shrewsground {
+  position: absolute;
+  right: 0px;
+  top: -40px;
+  background-color: #e0ba52;
+    width: 100%;
+       height:344px;
+       z-index: -1;
+
+     }    
+
 
   .title {
   text-align: left;
@@ -572,4 +703,21 @@ border-radius: 20px;
 		display: none;
 	}   
 
+}
+
+@media (min-width: 1200px) {
+  .shrewsbury {
+    padding-bottom: 47px;
+  }
+
+    .shrewsground {
+  position: absolute;
+  right: 0px;
+  top: -40px;
+  background-color: #e0ba52;
+    width: 100%;
+       height:455px;
+       z-index: -1;
+
+     }      
 }
