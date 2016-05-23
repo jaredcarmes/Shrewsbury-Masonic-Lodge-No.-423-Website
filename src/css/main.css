@@ -312,6 +312,7 @@ border-radius: 20px;
    height: 150px;
     width: 150px;
     border-radius: 100%;
+    border: solid 4px #aaa;     
     margin-top: 10px;
     margin-bottom: 10px;
             -webkit-filter: sepia(100%) hue-rotate(185deg) saturate(200%);
@@ -491,11 +492,11 @@ border-radius: 20px;
    height: 200px;
     width: 200px;
     border-radius: 100%;
-    border: solid 2px #000; 
+    border: solid 4px #aaa; 
     margin-top: 20px;
 
-        -webkit-filter: blur(1.5px) sepia(100%) hue-rotate(185deg) saturate(200%);
-        filter: blur(1.5px) sepia(100%) hue-rotate(185deg) saturate(200%);
+        -webkit-filter: sepia(100%) hue-rotate(185deg) saturate(200%);
+        filter: sepia(100%) hue-rotate(185deg) saturate(200%);
         -webkit-transition: .3s ease-in-out;
         transition: .3s ease-in-out;
 
@@ -503,8 +504,8 @@ border-radius: 20px;
 }
 
 .grand img {
-         -webkit-filter: blur(1.5px) sepia(100%) saturate(200%);
-        filter: blur(1.5px) sepia(100%) saturate(200%);
+         -webkit-filter: sepia(100%) saturate(200%);
+        filter: sepia(100%) saturate(200%);
         -webkit-transition: .3s ease-in-out;
         transition: .3s ease-in-out;
         height: 250px;
