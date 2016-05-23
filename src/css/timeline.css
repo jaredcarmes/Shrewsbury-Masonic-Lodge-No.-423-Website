@@ -137,10 +137,10 @@ header h1 {
   margin-top: -12px;
 }
 .cd-timeline-img.cd-picture {
-  background: #75ce66;
+  background: #e0ba52;
 }
 .cd-timeline-img.cd-movie {
-  background: #c03b44;
+  background: #4b6ade;
 }
 .cd-timeline-img.cd-location {
   background: #f0ca45;
@@ -230,6 +230,7 @@ header h1 {
   border-radius: 0.25em;
   padding: 1em;
   box-shadow: 0 3px 0 #d7e4ed;
+
 }
 .cd-timeline-content:after {
   content: "";
@@ -262,6 +263,9 @@ header h1 {
   padding: .8em 0;
   opacity: .7;
 }
+.cd-date {
+  font-weight: bolder;
+}
 .cd-timeline-content::before {
   content: '';
   position: absolute;
@@ -278,6 +282,7 @@ header h1 {
     margin-left: 0;
     padding: 1.6em;
     width: 45%;
+    text-align: center;
   }
   .cd-timeline-content::before {
     top: 24px;
@@ -321,6 +326,8 @@ header h1 {
     -moz-animation: cd-bounce-2 0.6s;
     animation: cd-bounce-2 0.6s;
   }
+  .rightdate {
+text-align: left;
 }
 
 @media only screen and (min-width: 1170px) {
