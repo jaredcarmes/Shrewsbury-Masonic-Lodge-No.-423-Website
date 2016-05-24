@@ -43,8 +43,9 @@ font-weight: bold;
 }
 
 .btn-warning {
-            -webkit-filter: hue-rotate(185deg);
-        filter: hue-rotate(15deg) brightness(115%);
+    -webkit-filter: hue-rotate(15deg) brightness(115%);
+    -moz-filter: hue-rotate(15deg) brightness(115%);
+    filter: hue-rotate(15deg) brightness(115%);
 }
 
 .navbar-default {
