@@ -1,7 +1,11 @@
+.contact-form {
+  z-index: 20000;
+}
+
 #back-to-top {
     position: fixed;
-    bottom: 40px;
-    right: 40px;
+    bottom: 20px;
+    right: 30px;
     z-index: 9999;
     width: 32px;
     height: 32px;
@@ -27,7 +31,10 @@
   border-bottom: 1px solid #eee;
 }
 
-
+a {
+  color: #acb7c0;
+  text-decoration: none;
+}
 
 body {
   background-image:  url("../img/background2.jpg");
@@ -84,7 +91,8 @@ font-weight: bold;
     filter: hue-rotate(15deg) brightness(105%);
 }
 
-.btn-primary {
+.btn-primary,
+.panel-primary {
     -webkit-filter: hue-rotate(15deg) brightness(105%);
     -moz-filter: hue-rotate(15deg) brightness(105%);
     filter: hue-rotate(15deg) brightness(105%);
@@ -434,6 +442,17 @@ border-radius: 20px;
 
 .click {
   display: none;
+  position: absolute;
+  top: 50px;
+  right: 1%;
+  left: 1%;
+}
+
+.tap {
+   position: absolute;
+  top: 30px;
+  right: 1%;
+  left: 1%;
 }
 
 .lemon {
@@ -821,6 +840,14 @@ text-shadow: 1px 2px 4px #000;
   text-align: left;
 }
 
+     .tap {
+  display: none;
+}
+
+.click {
+  display: block;
+}
+
 .lemon  h2 {
   position: relative;
   top: -25px;
@@ -878,14 +905,6 @@ text-shadow: 1px 2px 4px #000;
 /*     .welcome {
   text-align: left;
 }*/
-
-     .tap {
-  display: none;
-}
-
-.click {
-  display: block;
-}
 
 
 .states img {
