@@ -11,13 +11,6 @@ Primary style
   box-sizing: border-box;
 }
 
-body {
-  background-color: #e9f0f5;
-  background-image: url("../img/background.png");
-  background-size: 20%;
-  background-repeat: repeat;;
-}
-
 a {
   color: #acb7c0;
   text-decoration: none;

@@ -1,3 +1,5 @@
+
+
 .contact-form {
   z-index: 20000;
 }
@@ -37,9 +39,9 @@ a {
 }
 
 body {
-  background-image:  url("../img/background2.jpg");
-
-  background-position: center;
+  background-image:  url("../img/background.png");
+  background-repeat: repeat;
+  background-size: 30%;
 }
 
 .bodyground {
@@ -91,8 +93,7 @@ font-weight: bold;
     filter: hue-rotate(15deg) brightness(105%);
 }
 
-.btn-primary,
-.panel-primary {
+.btn-primary {
     -webkit-filter: hue-rotate(15deg) brightness(105%);
     -moz-filter: hue-rotate(15deg) brightness(105%);
     filter: hue-rotate(15deg) brightness(105%);
@@ -829,6 +830,13 @@ text-shadow: 1px 2px 4px #000;
   		background-position: top;
       		background-repeat: no-repeat;
 	}  	
+
+  .bodyground {
+  background-image:  url("../img/background.png");
+  background-position: center;
+  background-repeat: repeat;
+  background-size: 20%;
+}
 
 .dropdown-menu li {
   border-bottom: none;
