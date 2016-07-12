@@ -26,9 +26,15 @@ gulp.task('markup', function() {
 });
 
 gulp.task('images', function() {
-	gulp.src('src/img/*')
+	gulp.src('src/img/*')	
 		.pipe(minifyIMG())
 		.pipe(gulp.dest('dist/img/'))
+});
+
+gulp.task('loading', function() {
+	gulp.src('src/images/*')	
+		.pipe(minifyIMG())
+		.pipe(gulp.dest('dist/images/'))
 });
 
 // File moving tasks
@@ -55,4 +61,4 @@ gulp.task('lodges', function() {
 		.pipe(gulp.dest('dist/img/lodges/'))
 });
 
-gulp.task('default', ['scripts', 'stylesheets', 'markup', 'images', 'copyfonts', 'copyicons', 'brothers', 'lodges']);
+gulp.task('default', ['scripts', 'stylesheets', 'markup', 'images', 'loading', 'copyfonts', 'copyicons', 'brothers', 'lodges']);
