@@ -393,6 +393,7 @@ color: #e0ba52;
 }
 
 .title {
+  display: block;
   text-align: center;
   background-color: #aaa;
   padding: 20px;
@@ -1114,4 +1115,5 @@ top: 30px;
      .lemon {
       margin-top: 30px;
      }
+}
 }

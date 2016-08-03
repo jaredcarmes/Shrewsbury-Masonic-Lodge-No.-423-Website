@@ -106,7 +106,7 @@
 
 
 
-
+<!-- ADD THE CLASS: ".grandflow" to col-md-4 elements to make the grand lodges stick only when there are more than three rows!! -->
 
 
 
@@ -120,10 +120,10 @@
 					</h2>
 				</div>
 				<div class="panel-body">
-				<div class="container-fluid">
+				<div class="container-fluid release-container">
 					<h3 class="title">Pennsylvania</h3>
 					<br>
-					<div class="col-md-4">
+					<div class="col-md-4 grandflow">
 						<div class="row text-center">
 							<div class="col-md-12 states grand">
 								<a href="img/lodges/pa_grand_lodge.jpg" data-lightbox="pa_grand_lodge" data-title="Grand Lodge of Pennsylvania - Philadelphia, PA">
@@ -190,7 +190,7 @@
 						</div>
 					</div>
 				</div>
-				<div class="container-fluid">
+				<div class="container-fluid release-container"">
 					<hr>
 					<h3 class="title">Maryland</h3>
 					<hr>
@@ -222,7 +222,7 @@
 						</div>
 					</div>
 
-				<div class="container-fluid">
+				<div class="container-fluid release-container"">
 					<hr>
 					<h3 class="title">Florida</h3>
 					<hr>
@@ -252,7 +252,7 @@
 							</div>
 						</div>
 					</div>
-					<div class="container-fluid">
+					<div class="container-fluid release-container"">
 						<hr>
 						<h3 class="title">Virginia</h3>
 						<hr>
@@ -282,7 +282,7 @@
 							</div>
 						</div>
 					</div>
-					<div class="container-fluid">
+					<div class="container-fluid release-container"">
 						<hr>
 						<h3 class="title">Texas</h3>
 						<hr>
@@ -312,7 +312,7 @@
 							</div>
 						</div>
 					</div>	
-					<div class="container-fluid hidden">
+					<div class="container-fluid release-container hidden">
 						<hr>
 						<h3 class="title">State</h3>
 						<hr>
@@ -412,7 +412,17 @@
 	<!-- Lightbox JS -->
 	<script type="text/javascript" src="js/lightbox.js"></script>	
 	<!-- Main JS -->
-	<script type="text/javascript" src="js/main.js"></script>	
+	<script type="text/javascript" src="js/main.js"></script>
+
+	<script>
+
+if ($(window).width() < 993) {
+    $('.grandflow').removeClass('stuck release');
+} else {
+    $('.grandflow').addClass('stuck release');
+}
+
+	</script>	
 	
 </body>
 </html>
