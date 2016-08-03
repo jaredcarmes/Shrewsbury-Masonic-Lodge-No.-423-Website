@@ -45,3 +45,17 @@ if ($('#back-to-top').length) {
         }, 700);
     });
 }
+
+
+
+
+
+// Sticky grand lodge images //
+
+
+
+if ($(window).width() < 993) {
+    $('.grandflow').removeClass('stuck release');
+} else {
+    $('.grandflow').addClass('stuck release');
+}
